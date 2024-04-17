@@ -26,55 +26,32 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button explicitButton = findViewById(R.id.explicitButton);
-        explicitButton.setOnClickListener(new View.OnClickListener() {
+        Button Button1 = findViewById(R.id.Button1);
+        Button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Explicit Intent
+                Intent intent = new Intent(MainActivity.this, FirstActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button Button2 = findViewById(R.id.Button2);
+        Button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 startActivity(intent);
             }
         });
 
-        Button implicitButton = findViewById(R.id.implicitButton);
-        implicitButton.setOnClickListener(new View.OnClickListener() {
+        Button Button3 = findViewById(R.id.Button3);
+        Button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Implicit Intent to open a web page
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://ritaj.birzeit.edu/"));
+                Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
                 startActivity(intent);
             }
         });
-
-        Button startActivityForResultButton = findViewById(R.id.startActivityForResultButton);
-        startActivityForResultButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Start ThirdActivity for result
-                Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
-                startActivityForResult(intent, REQUEST_CODE);
-                //Your task try to solve this problem
-                //https://medium.com/@patelsneh18/startactvivityforresult-deprecated-alternative-and-using-it-outside-activity-class-bc9331cf896
-            }
-        });
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_CODE && resultCode == RESULT_OK && data != null) {
-            String name = data.getStringExtra("name");
-            TextView welcomeTextView = findViewById(R.id.welcomeTextView);
-            welcomeTextView.setText("Welcome, " + name + "!");
-        }
-    }
-
-
-    public void MakeCall(View view) {
-        Intent intent = new Intent(MainActivity.this, CallActivity.class);
-
-        // Start CallActivity
-        startActivity(intent);
-    }
 }

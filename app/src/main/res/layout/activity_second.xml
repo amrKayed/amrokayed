@@ -6,11 +6,25 @@
     tools:context=".SecondActivity">
 
     <TextView
-        android:id="@+id/messageTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:layout_centerHorizontal="true"
+        android:text="مستويات التصنيف"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="مستويات التصنيف الحديثة للكائنات الحية تصنف الكائنات الحية وفقًا لمستويات هرمية متسلسلة تشمل: المملكة، الشعبة، الطائفة، الرتبة، العائلة، الجنس، النوع. هذا النظام التصنيفي يساعد العلماء على فهم العلاقات والخصائص المشتركة بين الكائنات الحية."
+        />
+    <ImageView
+        android:layout_marginTop="150dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:src="@drawable/image2"
+        />
 
 </RelativeLayout>

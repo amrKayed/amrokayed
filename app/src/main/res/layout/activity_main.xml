@@ -4,50 +4,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <Button
-        android:id="@+id/callButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="160dp"
-        android:text="Call"
-        android:onClick="MakeCall"
-        />
-    <Button
-        android:id="@+id/explicitButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Explicit Intent" />
-
-    <Button
-        android:id="@+id/implicitButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/explicitButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="Implicit Intent" />
-
-    <Button
-        android:id="@+id/startActivityForResultButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/implicitButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="Start Activity For Result" />
 
     <TextView
-        android:id="@+id/welcomeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/startActivityForResultButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text=""
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:text=" الكائنات الحية وتصنيفها" />
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="تصنيف الكائنات الحية الحديث" />
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="مستويات التصنيف" />
+
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="التصنيف الشكلي  والتصنيف الجيني" />
+
+
+
 
 
 </RelativeLayout>

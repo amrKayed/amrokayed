@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThirdActivity">
+    tools:context=".FirstActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="التصنيف الشكلي  والتصنيف الجيني"
+        android:text="تصنيف الكائنات الحية الحديث"
         />
 
     <TextView
@@ -17,13 +17,14 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:text="لتصنيف الشكلي والتصنيف الجيني علم التصنيف الحيوي يقسم الكائنات الحية إلى مجموعات تبعًا لسماتها المشتركة، سواء من خلال الخصائص الشكلية (التصنيف الشكلي) أو الخصائص الجينية (التصنيف الجيني).
-"
+        android:text="لتصنيف الحديث للكائنات الحية يعتمد على تحليل الحمض النووي (DNA) بالإضافة إلى الخصائص المورفولوجية. هذا يسمح بتصنيف أكثر دقة يعكس العلاقات التطورية بين الكائنات الحية. "
         />
     <ImageView
         android:layout_marginTop="150dp"
+
         android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:src="@drawable/image3"
+        android:layout_height="400dp"
+        android:src="@drawable/image1"
         />
+
 </RelativeLayout>
